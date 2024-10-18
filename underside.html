@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<style>    .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    padding: 20px;
-    grid-gap: 55px;
-}
-textarea {
-    width: 100%;   
-    height: 100px;
-    padding: 10px;
-    font-size: 12px;
-    box-sizing: border-box; 
-    resize: none; 
-    head }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underside - Tourist Page for the USA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Enkle skrifttype */
+            background-color: #f4f4f4; /* Lys bakgrunnsfarge */
+            margin: 0;
+            padding: 0;
+        }
 
-</style>
-   <center> <h1>tourist page for the usa</h1>
-    <p></p></center>
+        h1 {
+            text-align: center;
+            color: #333; /* Mørkere farge for overskriften */
+            margin-top: 20px; /* Litt avstand fra toppen */
+        }
 
+        .hero-image {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px; /* Avstand mellom bildet og innholdet under */
+        }
 
-    <title>Underside</title>
+        .hero-image img {
+            width: 100%; /* Gjør bildet responsivt */
+            max-width: 300px; /* Maks bredde */
+            height: auto; /* Automatisk høyde */
+        }
 
+        .hero-image div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* To kolonner */
+            margin: 0 auto;
+            padding: 20px;
+            grid-gap: 20px; /* Avstand mellom boksene */
+            max-width: 1000px; /* Maks bredde på containeren */
+        }
+
+        .text-box {
+            background-color: #fff; /* Hvit bakgrunn */
+            border-radius: 5px; /* Runde kanter */
+            border: 1px solid #ccc; /* Kantfarge */
+            padding: 10px;
+            font-size: 14px; /* Større skrifttype */
+            box-sizing: border-box; /* Inkluderer padding i bredden */
+            height: auto; /* Automatisk høyde for å vise all tekst */
+            overflow: hidden; /* Ingen rullefelt */
+        }
+
+        a {
+            display: block; /* Gjør lenken til en blokk for enklere klikk */
+            text-align: center;
+            margin: 20px auto; /* Sentralisert lenke */
+            color: #007BFF; /* Blå farge på lenken */
+            text-decoration: none; /* Ingen understreking */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Understrek når musen er over */
+        }
+    </style>
 </head>
 <body>
-   
-    <center>
-        <div style="position: relative; display: inline-block;">
-            <img src="https://cdn.pixabay.com/photo/2015/11/03/13/33/american-flag-1020853_1280.jpg" alt="" width="300">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(0, 0, 0); font-size: 24px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);">welcome to usa</div>
-        </div>
-    </center>
-   
-    <div class="container">
-    
-        <textarea placeholder="">      usa nasjonalparks 
-            the nasjonalparks that will be listtid are goning to be 
-            
-Yellowstone National Park, 
-Yosemite National Park, Grand Canyon National Park,
+    <h1>Tourist Page for the USA</h1>
 
-this are the parks that goning to be talk about 
-
-Yellowstone National Park is in the United States, was made in 1872, and is the oldest and largest national park in the USA. The park has a very good view of the mountains, forests, lakes, waterfalls, canyons, hot springs, and 100,000 geysers. It is The park is home to a number of animal species, including red foxes, and has a lot of vegetation with forests of spruce. Forest fires have made the land over many many years. Yellowstone Lake is surrounded by forest and it has geysers and hot springs that support a large wildlife. In Yellowstone you will find the cool hot springs with special colors due to minerals deposits in the water despite the high temperatures. The national park is part of unique Ecosystem, which has been essential for the conservation of bison, bears and wolves.
-        </textarea>
-        <textarea placeholder="Boks 2"></textarea>
-        <textarea placeholder="Boks 3"></textarea>
-        <textarea placeholder="Boks 4"></textarea>
-        <textarea placeholder="Boks 5"></textarea>
-    
-
-        <textarea placeholder="Boks 6"></textarea>
-        <textarea placeholder="Boks 7"></textarea>
-        <textarea placeholder="Boks 8"></textarea>
-        <textarea placeholder="Boks 9"></textarea>
-        <textarea placeholder="Boks 10"></textarea> 
- 
-   
-   
-    <a href="index.html">Tilbake til hovedsiden</a>
-    <div class="container">
-       
-        </div>
+    <div class="hero-image">
+        <img src="https://cdn.pixabay.com/photo/2015/11/03/13/33/american-flag-1020853_1280.jpg" alt="American Flag">
+        <div>Welcome to USA</div>
     </div>
+
+    <div class="container">
+        <div class="text-box">
+            <strong>USA National Parks:</strong><br><br>
+            The national parks that will be listed are going to be: 
+            Yellowstone National Park, 
+            Yosemite National Park, 
+            Grand Canyon National Park.<br><br>
+
+            This are the parks that going to be talked about.<br><br>
+
+            Yellowstone National Park is in the United States, was made in 1872, and is the oldest and largest national park in the USA. The park has a very good view of the mountains, forests, lakes, waterfalls, canyons, hot springs, and 100,000 geysers. It is home to a number of animal species, including red foxes, and has a lot of vegetation with forests of spruce. Forest fires have shaped the land over many years. Yellowstone Lake is surrounded by forest, and it has geysers and hot springs that support a large wildlife. In Yellowstone, you will find the cool hot springs with special colors due to mineral deposits in the water despite the high temperatures. The national park is part of a unique ecosystem, which has been essential for the conservation of bison, bears, and wolves.<br><br>
+            Yosemite National Park is also a very big park parks in the usa to, it is more know for it’s mountains, waterfalls, villed life, Giant Sequoias, it has a very exspansiv mountain range, is wildli'know for its mountains and its excellent view of the waterfalls, in the Yosemite National Park there are a lot of different animals, that live in the excellent environment like sierra nevada bighrod sheep, bats, deer, rodents, pacific fisher and many more amazing animals.
+        </div>
+        
+        <div class="text-box">
+            <strong>Boks 2:</strong><br>
+            Her kan du skrive inn informasjon for boks 2.
+        </div>
+        <div class="text-box">
+            <strong>Boks 3:</strong><br>
+            Her kan du skrive inn informasjon for boks 3.
+        </div>
+        <div class="text-box">
+            <strong>Boks 4:</strong><br>
+            Her kan du skrive inn informasjon for boks 4.
+        </div>
+        <div class="text-box">
+            <strong>Boks 5:</strong><br>
+            Her kan du skrive inn informasjon for boks 5.
+        </div>
+        <div class="text-box">
+            <strong>Boks 6:</strong><br>
+            Her kan du skrive inn informasjon for boks 6.
+        </div>
+        <div class="text-box">
+            <strong>Boks 7:</strong><br>
+            Her kan du skrive inn informasjon for boks 7.
+        </div>
+        <div class="text-box">
+            <strong>Boks 8:</strong><br>
+            Her kan du skrive inn informasjon for boks 8.
+        </div>
+        <div class="text-box">
+            <strong>Boks 9:</strong><br>
+            Her kan du skrive inn informasjon for boks 9.
+        </div>
+        <div class="text-box">
+            <strong>Boks 10:</strong><br>
+            Her kan du skrive inn informasjon for boks 10.
+        </div> 
+    </div>
+
+    <a href="index.html">Tilbake til hovedsiden</a>
 </body>
 </html>
