@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+<body>
+    <link rel="stylesheet" href="/css/hund.css">
+   <style>
+
+   </style> 
+
+<div class="container">
+    <div class="text-box">
+        <img src="bilde 1.jpeg " width="250px"br></br>
+       <img src="bilde 2.jpg" width="250px"br></br>
+
+        
+
+    <div class="text-box">
+        <strong>hoved side:</strong><br>
+        <a href="index.html">Tilbake til side om meg</a>
+    </div> 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

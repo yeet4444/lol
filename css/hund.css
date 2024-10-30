@@ -36,5 +36,68 @@
     margin: 0; 
     color: #000000; 
 }
+font-family: Arial, sans-serif; /* Enkle skrifttype */
+background-color: #f4f4f4; /* Lys bakgrunnsfarge */
+margin: 0;
+padding: 0;
+}
 
+h1 {
+text-align: center;
+color: #333; /* Mørkere farge for overskriften */
+margin-top: 20px; /* Litt avstand fra toppen */
+}
+
+.hero-image {
+position: relative;
+text-align: center;
+margin-bottom: 20px; /* Avstand mellom bildet og innholdet under */
+}
+
+.hero-image img {
+width: 100%; /* Gjør bildet responsivt */
+max-width: 300px; /* Maks bredde */
+height: auto; /* Automatisk høyde */
+}
+
+.hero-image div {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(255, 255, 255);
+font-size: 24px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr; /* To kolonner */
+margin: 0 auto;
+padding: 20px;
+grid-gap: 20px; /* Avstand mellom boksene */
+max-width: 1000px; /* Maks bredde på containeren */
+}
+
+.text-box {
+background-color: #fff; /* Hvit bakgrunn */
+border-radius: 5px; /* Runde kanter */
+border: 1px solid #ccc; /* Kantfarge */
+padding: 10px;
+font-size: 14px; /* Større skrifttype */
+box-sizing: border-box; /* Inkluderer padding i bredden */
+height: auto; /* Automatisk høyde for å vise all tekst */
+overflow: hidden; /* Ingen rullefelt */
+}
+
+a {
+display: block; /* Gjør lenken til en blokk for enklere klikk */
+text-align: center;
+margin: 20px auto; /* Sentralisert lenke */
+color: #007BFF; /* Blå farge på lenken */
+text-decoration: none; /* Ingen understreking */
+}
   @media only screen and (min-width: 600px) and (max-width: 1024px
+  
+  
+  
