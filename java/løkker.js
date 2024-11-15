@@ -1,6 +1,5 @@
 
-//for (let i = 1; i>9; i += 1){
-//console.log (i)
+
    
   document.getElementById("addTaskButton").addEventListener("click", addtask);
 
@@ -15,12 +14,12 @@
    function tellBokstaver(str) {
 
       teller små bokstaver i en streng
+    }
       
-      
 
 
-
-  <title>Stein, Saks, Papir</title>
+  
+  <title>Stein, Saks, Papir</title>} 
 
 
   <script>
@@ -79,7 +78,7 @@
     createUI();
   </script>
 
-
+}
       
       
 
