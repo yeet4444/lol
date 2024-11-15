@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
   <link rel="stylesheet" href="css/hund.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="java/løkker.js" defer></script>
 <style>
 
 </style>
 </head>
 <body>
+
+    <input type="text" id="taskinput" placeholder="Enter new task">
+    <button id="addtaskbutton">Add Task</button>
+    <button id="removetaskbutton">Remove Task</button>
+    <ul id="tasklist"></ul>
+    
+    <script>
+        document.getElementById("addtaskbutton").addEventListener("click", addtask);
+        document.getElementById("removetaskbutton").addEventListener("click", removetask);
+    
+        function addtask() {
+            let task = document.getElementById("taskinput").value;
+    
+            if (task.trim() === "") {
+                alert("Please enter a task");
+                return;
+            }
+    
+            let listItem = document.createElement("li");
+            listItem.textContent = task;
+            document.getElementById("tasklist").appendChild(listItem);
+    
+            // Clear the input field after adding the task
+            document.getElementById("taskinput").value = "";
+        }
+    
+        function removetask() {
+            let taskList = document.getElementById("tasklist");
+            
+            // Check if the list has any items to remove
+            if (taskList.children.length > 0) {
+                taskList.removeChild(taskList.lastChild);
+            } else {
+                alert("No tasks to remove!");
+            }
+        }
+    </script>
+
+
+
+
   <h1 style="text-align:center;">min nettside</h1>
   <p style=text-align:center;>mitt navn er stian jacobsen.</p> 
  <img src="https://images.squarespace-cdn.com/content/v1/6182780d6e23c04508c9eabc/1636638475348-T9NU5M71319B94KFOY7N/unsplash-image-UtrE5DcgEyg.jpg" alt="hund" width="400" height="300" class="center">
@@ -19,11 +64,11 @@
       <div class="container">
         <div class="text-box">
             <strong>boks 1:</strong><br>
-            hund 1
+            litt om meg
         </div>
         <div class="text-box">
             <strong>boks 2:</strong><br>
-            hund 2
+            
         </div>
         <div class="text-box">
             <strong>Boks 3:</strong><br>
@@ -60,7 +105,7 @@
         </div> 
     </div>
 
-    <script>
+ 
 
 </body>
 </html>
