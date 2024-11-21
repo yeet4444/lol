@@ -1,51 +1,26 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stein, Saks, Papir</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    button {
-      margin: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    #result {
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    #score {
-      margin-top: 10px;
-      font-size: 16px;
-    }
-  </style>
+    <meta charset="UTF-8"> <!-- Angir tegnsettet som brukes (UTF-8 for bred språkstøtte) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tilpasser visningen for mobil -->
+    <title>Stein saks papir for 4 åringer!!</title> <!-- Tittel på nettsiden -->
+    <link rel="stylesheet" href="spill.css"> <!-- Kobler til CSS-filen for stil -->
+    <script src="/java/lokker.js" defer></script> <!-- Kobler til JavaScript-filen og forsinker kjøring til HTML-en er lastet -->
 </head>
 <body>
-  <h1>Stein, Saks, Papir</h1>
+    <!-- Spillboks som inneholder valg for "stein", "saks" og "papir" -->
+    <div id="box">
+        <!-- Bilde for "stein" -->
+        <img id="stein" class="stein bilder" src="bilder/Stein.svg" alt="Stein - Velg stein"> 
+        <!-- Bilde for "saks" -->
+        <img id="saks" class="saks bilder" src="bilder/Saks.svg" alt="Saks - Velg saks">
+        <!-- Bilde for "papir" -->
+        <img id="papir" class="papir bilder" src="bilder/Papir.svg" alt="Papir - Velg papir">
+    </div>
 
-  <!-- Knapper for spillalternativer -->
-  <div id="buttons">
-    <button>Stein</button>
-    <button>Saks</button>
-    <button>Papir</button>
-  </div>
-
-  <!-- Resultatfelt -->
-  <p id="result">Velg et alternativ for å starte spillet!</p>
-
-  <!-- Poengsumfelt -->
-  <p id="score">Poeng - Du: 0, Datamaskinen: 0</p>
-
-  <!-- Lenke til eksternt script -->
-  <script src="java/lokker.js" defer></script>
+    <!-- Tekstboks som viser spillresultatet -->
+    <h1 id="tekstboks">
+        Velg stein, saks eller papir for å starte!
+    </h1>
 </body>
 </html>
-   
-
