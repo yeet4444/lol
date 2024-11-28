@@ -43,7 +43,7 @@ function spill(valg) {
         // Brukeren vinner med de følgende kombinasjonene
         (valg === "stein" && motstander === "saks") || 
         (valg === "saks" && motstander === "papir") || 
-        (valg === "papir" && motstander === "stein")
+        (valg === "papir" && motstander === "stein") 
     ) {
         resultat = "Du vant!"; // Brukeren vinner
     } else {
