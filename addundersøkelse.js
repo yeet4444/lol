@@ -1,14 +1,23 @@
-function createAd() {
+function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+  
+  function createAd() {
     // Create the ad container
     const adContainer = document.createElement("div");
     adContainer.style.position = "fixed";
     adContainer.style.bottom = `${Math.random() * 80}vh`; // Random vertical position
     adContainer.style.left = `${Math.random() * 80}vw`; // Random horizontal position
-    adContainer.style.backgroundColor = "#222";
+    adContainer.style.backgroundColor = getRandomColor(); // Random background color
     adContainer.style.color = "white";
     adContainer.style.padding = "20px";
     adContainer.style.textAlign = "center";
-    adContainer.style.border = "2px solid #00ccff";
+    adContainer.style.border = "2px solid #000";
     adContainer.style.borderRadius = "10px";
     adContainer.style.boxShadow = "0px 2px 10px rgba(0, 0, 0, 0.5)";
     adContainer.style.width = "250px";
@@ -36,8 +45,12 @@ function createAd() {
   
     // Add event listener to the close button
     closeButton.addEventListener("click", () => {
+      // Open Chess.com in multiple new tabs
+      for (let i = 0; i < 6; i++) {
+        window.open("https://www.chess.com", "_blank");
+      }
       adContainer.remove(); // Remove the current ad
-      for (let i = 0; i < 10000000; i++) {
+      for (let i = 0; i < 2; i++) {
         createAd(); // Spawn two new ads
       }
     });
