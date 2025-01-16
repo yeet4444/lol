@@ -1,0 +1,164 @@
+/* Oppdatert og forbedret CSS for et mer profesjonelt og engasjerende design */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.survey-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2a5298;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+form ol {
+    padding: 0;
+    list-style: none;
+}
+
+form ol li {
+    margin-bottom: 25px;
+    padding: 10px;
+    border-left: 4px solid #2a5298;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2a5298;
+    box-shadow: 0 0 6px rgba(42, 82, 152, 0.5);
+    outline: none;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+}
+
+#response {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1rem;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .survey-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+#statistics {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: none; /* Skjult til det er fylt med statistikk */
+}
+
+#statsList {
+    list-style: none;
+    padding: 0;
+}
+
+#statsList li {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid #2a5298;
+    border-radius: 5px;
+}
+
+#statistics {
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: none; /* Skjult til det er fylt med statistikk */
+}
+
+#statsList {
+    list-style: none;
+    padding: 0;
+}
+
+#statsList li {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid #2a5298;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#statsList .percentage {
+    color: #2a5298;
+    font-weight: bold;
+}

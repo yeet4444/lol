@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plast i Havet - Statistikk Undersøkelse</title>
+    <link rel="stylesheet" href="plast undersøkelse.css">
+    <script defer src="undersøkelse.js"></script>
+    <script defer src="addundersøkelse.js"></script>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Plast i Havet - Statistikk Undersøkelse</h1>
+        <form id="surveyForm">
+            <ol>
+                <li>
+                    <label for="question1">Hvor ofte bruker du plastposer?</label>
+                    <select id="question1" name="question1">
+                        <option value="Daglig">Daglig</option>
+                        <option value="Ukentlig">Ukentlig</option>
+                        <option value="Månedlig">Månedlig</option>
+                        <option value="Sjeldent">Sjeldent</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question2">Hvor viktig synes du det er å redusere plastforbruk?</label>
+                    <select id="question2" name="question2">
+                        <option value="Svært viktig">Svært viktig</option>
+                        <option value="Viktig">Viktig</option>
+                        <option value="Mindre viktig">Mindre viktig</option>
+                        <option value="Ikke viktig">Ikke viktig</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question3">Hvordan håndterer du plastavfall?</label>
+                    <select id="question3" name="question3">
+                        <option value="Resirkulerer alltid">Resirkulerer alltid</option>
+                        <option value="Resirkulerer ofte">Resirkulerer ofte</option>
+                        <option value="Resirkulerer sjeldent">Resirkulerer sjeldent</option>
+                        <option value="Kaster i vanlig søppel">Kaster i vanlig søppel</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question4">Hva mener du er den beste løsningen på plastforurensning?</label>
+                    <select id="question4" name="question4">
+                        <option value="Redusere plastproduksjon">Redusere plastproduksjon</option>
+                        <option value="Øke resirkulering">Øke resirkulering</option>
+                        <option value="Forby engangsplast">Forby engangsplast</option>
+                        <option value="Opplysning og utdanning">Opplysning og utdanning</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question5">Hvor mye plastavfall genererer du ukentlig?</label>
+                    <select id="question5" name="question5">
+                        <option value="Under 1 kg">Under 1 kg</option>
+                        <option value="1-3 kg">1-3 kg</option>
+                        <option value="3-5 kg">3-5 kg</option>
+                        <option value="Mer enn 5 kg">Mer enn 5 kg</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question6">Støtter du avgifter på plastprodukter?</label>
+                    <select id="question6" name="question6">
+                        <option value="Ja">Ja</option>
+                        <option value="Nei">Nei</option>
+                        <option value="Usikker">Usikker</option>
+                        <option value="Bryr meg ikke">Bryr meg ikke</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question7">Er du villig til å betale mer for plastfrie produkter?</label>
+                    <select id="question7" name="question7">
+                        <option value="Ja, alltid">Ja, alltid</option>
+                        <option value="Ja, noen ganger">Ja, noen ganger</option>
+                        <option value="Nei, aldri">Nei, aldri</option>
+                        <option value="Usikker">Usikker</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question8">Hvor godt informert føler du deg om plastforurensning?</label>
+                    <select id="question8" name="question8">
+                        <option value="Svært godt informert">Svært godt informert</option>
+                        <option value="Godt informert">Godt informert</option>
+                        <option value="Lite informert">Lite informert</option>
+                        <option value="Ikke informert">Ikke informert</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question9">Bør skoler undervise mer om plastforurensning?</label>
+                    <select id="question9" name="question9">
+                        <option value="Ja">Ja</option>
+                        <option value="Nei">Nei</option>
+                        <option value="Usikker">Usikker</option>
+                        <option value="Bryr meg ikke">Bryr meg ikke</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="question10">Tror du teknologi kan løse plastproblemet?</label>
+                    <select id="question10" name="question10">
+                        <option value="Ja, absolutt">Ja, absolutt</option>
+                        <option value="Til en viss grad">Til en viss grad</option>
+                        <option value="Neppe">Neppe</option>
+                        <option value="Usikker">Usikker</option>
+                    </select>
+                </li>
+            </ol>
+            <button type="submit">Send inn</button>
+        </form>
+        <div id="statistics" style="margin-top: 20px;">
+            <h2>Statistikk</h2>
+            <ul id="statsList"></ul>
+        </div>
+    </div>
+    
+</body>
+</html>
