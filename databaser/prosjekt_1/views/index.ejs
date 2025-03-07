@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brukere</title>
+    <link rel="stylesheet" href="/views/minecraft.css">  <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="end-background">
+        <div class="steve"></div>
+        <div class="ender-dragon"></div>
+    </div>
+    
+    <div class="minecraft-container">
+        <h1>Liste over Brukere</h1>
+
+        <!-- Skjema for å legge til brukere -->
+        <form action="/add" method="POST">
+            <input type="text" name="name" placeholder="Navn" required>
+            <input type="email" name="email" placeholder="E-post" required>
+            <button type="submit">Legg til Bruker</button>
+        </form>
+
+        <ul class="user-list">
+            <% users.forEach(user => { %>
+                <li class="user-item">
+                    <%= user.name %> - <%= user.email %>
+                    <!-- Slett-knapp -->
+                    <form action="/delete" method="POST" style="display:inline;">
+                        <input type="hidden" name="id" value="<%= user.id %>">
+                        <button type="submit" class="delete-btn">Slett</button>
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+/* Minecraft Font */
+
+
+b {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* The End Background */
+.end-background {
+    background: url('https://i.imgur.com/YT1o3Gx.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Steve */
+.steve {
+    width: 100px;
+    height: 100px;
+    background: url('images/steve.png');  /* Put steve.png in an 'images' folder *//* Pixelated Steve */
+    background-size: cover;
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    animation: bounce 1s infinite alternate;
+}
+
+/* Ender Dragon */
+.ender-dragon {
+    width: 200px;
+    height: 100px;
+    background: url('https://i.imgur.com/EiMz4aN.png'); /* Pixelated Ender Dragon */
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    right: 30%;
+    animation: fly 2s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes fly {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+}
+
+}
+
+
+    </style>
+</body>
+</html>
